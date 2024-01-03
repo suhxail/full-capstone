@@ -1,0 +1,610 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  /* height: 123vh; */
+  height: 100vh;  
+  align-items: center;
+  justify-content: center;
+  color: black;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://png.pngtree.com/thumb_back/fh260/back_our/20190614/ourmid/pngtree-jewelry-event-promotion-main-map-image_123082.jpg");
+}
+
+.App2 {
+  text-align: center;
+  width: 100%-200px;
+  display: flex;
+  flex-direction: column;
+  height: 115vh;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://png.pngtree.com/thumb_back/fh260/back_our/20190614/ourmid/pngtree-jewelry-event-promotion-main-map-image_123082.jpg");
+}
+
+.viewProfile-container,.editProfile-container{
+  text-align: center;
+  width: 100%-200px;
+  display: flex;
+  flex-direction: column;
+  height: 93vh;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://png.pngtree.com/thumb_back/fh260/back_our/20190614/ourmid/pngtree-jewelry-event-promotion-main-map-image_123082.jpg");
+}
+
+/* signin and signup */
+
+.auth-form-container,
+.signin-form,
+.signup-form {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 600px) {
+  .auth-form-container {
+    padding: 50px;
+    border: 1px solid maroon;
+    border-radius: 10px;
+    margin: 0.5rem;   
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/job546-kul-02.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=91276a0b1e1ea76c6114873deb9d3c1c");
+  
+}
+}
+
+.signin-label,
+.signup-label {
+  text-align: left;
+  padding: 0.25rem 0;
+  font-size: 15px;
+}
+
+.signin-passwordIcon{
+  margin-left: 290px;  
+}
+.signup-passwordIcon{
+  margin-left: 115px;  
+}
+.signup-confirmPasswordIcon{
+  margin-left: 60px;
+}
+
+/* .signin-header,.signup-header{
+  font-size: 35px;
+} */
+
+.signin-text,
+.signup-text {
+  font-size: 35px;
+}
+
+.signin-input,
+.signup-input {
+  margin: 0.5rem 0;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.signin-btn,
+.signup-btn {
+  border: none;
+  background-color: maroon;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  color: gold;
+}
+
+.link-btn {
+  background: none;
+  color: white;
+  text-decoration: underline;
+}
+
+/* end of singin and signup */
+
+/* product list */
+
+.product-listing-container {
+  width: 100px;
+  margin-top: 5px;
+  margin-left: 50px;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  grid-template-columns: auto auto auto auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;  
+  gap: 65px;
+  box-sizing: border-box;
+}
+
+.product-content {
+  background: #5C5346;
+  cursor: pointer;
+  color: gold;
+  border: none;
+  border-radius: 10px;
+  padding: 7px 14px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.product-btn {
+  background-color: maroon;
+  cursor: pointer;
+  color: gold;
+  border: none;
+  border-radius: 10px;
+  padding: 14px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 25px 2px;
+  
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.product-card {
+
+  position: relative;
+  border-radius: 5px;
+  padding: 5px 2px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-img {
+  background-size: cover;
+  width: 250px;
+  height: 250px;
+  padding: 2px;
+  border-radius: 30px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+/* end of product list */
+
+/* gold rate calculator */
+input[type=number],
+
+
+
+
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+
+}
+
+.calc-form {
+  border-radius: 5px;
+  padding: 20px;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+
+}
+
+.calc-table {
+  margin-top: 30px;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;  
+  width: 75%; 
+  margin-left: auto;
+  margin-right: auto;
+  /* table-layout: fixed; */
+  background-color: dimgray;
+}
+
+td,
+th {
+  border: 1px solid #4b4a4a;
+  text-align: left;
+  width: 150px;
+  padding: 15px;
+}
+
+.calc-button {
+  background-color: maroon;
+  border-radius: 10px;
+  border: none;
+  color: gold;
+  padding: 14px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+Title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.calc-label {
+  margin-right: 1rem;
+}
+
+.calc-headerName {
+  margin: 1em 0;
+  display: flex;
+  color: maroon;
+  align-items: center;
+  justify-content: center;
+}
+
+.invalidMessage {
+  margin: 5px 0;
+  color: #900C3F;
+  font-size: medium;
+}
+
+.topBtn {
+  margin-top: 10px;
+}
+
+.calc-topBtn {
+  margin: 5px;
+
+}
+
+.para {
+  background-color: dimgray;
+  width: fit-content;
+  margin: 20px 10px;
+  padding: 10px;
+  display: inline-block;
+  border-radius: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  form {
+    width: 100%;
+  }
+}
+
+/*end of gold rate calculator */
+
+
+/* Navbar */
+
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;  
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* 
+ 
+
+/* navbar style start  */
+
+.main-nav {
+  width: 100%;
+  height: 10em;
+  display: grid;
+  grid-template-columns: 10rem 1fr 2fr 1fr 10rem;
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+    background-color:maroon;
+    margin-top: 0px;
+}
+
+
+
+
+.logo {
+  display: grid;
+  /* background-color: #3b5998; */
+  grid-column: 2/3;
+  justify-content: start;
+  align-items: center;
+}
+
+.menu-link {
+  grid-column: 3/4;
+}
+
+.menu-link ul {
+  height: 10rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.social-media {
+  grid-column: 4/5;
+}
+
+.social-media ul {
+  height: 10rem;
+  display: grid;
+  grid-template-columns: 3fr repeat(3, 1fr);
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.social-media ul li {
+  text-align: right;
+}
+
+.social-media ul li:first-child {
+  grid-column: 2/3;
+}
+
+/* ----------- Grid part ends ----------------- */
+
+.logo h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  background: -webkit-linear-gradient(#eee, rgb(69, 57, 248));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.logo h2 span {
+  font-size: 3.5rem;
+}
+
+.menu-link ul li {
+  font-size: 1.8rem;
+}
+
+.menu-link ul li a {
+  text-transform: capitalize;
+  color: rgba(0, 0, 3, 0.8);
+  transition: 0.5s;
+}
+.menu-link ul li:hover > a {
+  transform-origin: left;
+  color: rgba(0, 0, 3, 1);
+  text-decoration: underline;
+  transition: 0.5s;
+}
+
+.social-media ul li {
+  font-size: 1.8rem;
+}
+
+.social-media .hamburger-menu {
+  display: none;
+}
+
+.facebook {
+  color: #3b5998;
+}
+
+.instagram {
+  color: #c32aa3;
+}
+
+.youtube {
+  color: #ff0000;
+}
+
+/* hero section   */
+
+.hero-section {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero-section p {
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+
+.hero-section h1 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
+@media (max-width: 1080px) {
+  .main-nav {
+    height: 8rem;
+    grid-template-columns: 2rem 3fr 3fr 1fr 2rem;
+  }
+
+  .logo,
+  .menu-link ul,
+  .social-media ul {
+    height: 8rem;
+  }
+}
+
+
+@media (max-width: 998px) {
+  .main-nav {
+    height: 7rem;
+    grid-template-columns: 2rem 2fr 3fr 2rem 2rem;
+  }
+
+  .menu-link {
+    display: none;
+  }
+
+  .logo,
+  .social-media ul {
+    height: 7rem;
+  }
+
+  .mobile-menu-link {
+    grid-column: 2/4;
+    position: relative;
+    z-index: 99;
+  }
+
+  .mobile-menu-link {
+    background-color: white;
+    height: 20rem;
+    display: grid;
+    grid-column: 2/5;
+    align-items: center;
+    padding-left: 3rem;
+    transition: all 2s linear;
+    transform-origin: top;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  }
+
+  .mobile-menu-link ul {
+    height: 20rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .mobile-menu-link ul li:first-child {
+    transition-delay: 0.2s;
+  }
+
+  .social-media {
+    grid-row: 1/2;
+    grid-column: 3/5;
+    justify-items: end;
+    align-items: center;
+    transition: all 2s linear;
+  }
+
+  .social-media .social-media-desktop {
+    height: 0;
+    display: none;
+  }
+
+  .social-media {
+    height: 7rem;
+    display: flex;
+    justify-self: end;
+    align-items: center;
+  }
+
+  .social-media .hamburger-menu {
+    display: block;
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 798px) {
+  .main-nav {
+    height: 6rem;
+    grid-template-columns: 1rem 2fr 1fr 1fr 1rem;
+  }
+
+  .logo,
+  .social-media ul {
+    height: 6rem;
+  }
+
+  .social-media {
+    height: 6rem;
+    display: flex;
+    justify-self: end;
+    align-items: center;
+  }
+
+  .social-media .hamburger-menu {
+    display: block;
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .main-nav {
+    height: 6rem;
+    grid-template-columns: 1rem 4fr 1fr 1fr 1rem;
+  }
+
+  .logo,
+  .social-media ul {
+    height: 6rem;
+  }
+
+  .logo h2 {
+    font-size: 2rem;
+  }
+
+  .social-media {
+    height: 6rem;
+    display: flex;
+    justify-self: end;
+    align-items: center;
+  }
+
+  .social-media .hamburger-menu {
+    display: block;
+    font-size: 2.5rem;
+  }
+
+  /* hero section  */
+
+  .hero-section h1 {
+    font-size: 3.8rem;
+  }
+}
+
+
+/* end of navbar */
